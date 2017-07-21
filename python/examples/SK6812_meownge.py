@@ -140,7 +140,9 @@ def cylon(strip, width, wait_ms=20):
 			strip.show()
 			time.sleep(wait_ms/1000.0)
 
-
+def white_test(strip):
+    for i in range (0, 10):
+        strip.setPixelColor(i, 0x0)
 
 
 # Main program logic follows:
@@ -170,6 +172,7 @@ if __name__ == '__main__':
 #		rainbow(strip)
 #		rainbowCycle(strip)
 #		theaterChaseRainbow(strip)
-		colorSet(strip, Color(0,0,0))
-		cylon(strip, 10)
+#		colorSet(strip, Color(0,0,0))
+#		cylon(strip, 10)
 		greenDrive(strip)
+#white_test(strip)
